@@ -16,8 +16,8 @@ function isAnagram(str1, str2) {
     return undefined;
   }
   
-  let v1 = sort(str1);
-  let v2 = sort(str2);
+  let v1 = sort(str1.toLowerCase);
+  let v2 = sort(str2.toLowerCase);
   if(v1===v2) return true
   else return false
 }
